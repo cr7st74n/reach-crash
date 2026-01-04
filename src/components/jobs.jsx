@@ -1,3 +1,6 @@
+import Card from './Card.jsx';
+import JobsData from '../jobs.json';
+
 const Jobs = () => {
   return (
     <div>
