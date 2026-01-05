@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <Navbar />
       {/* <!-- Hero --> */}
-      <Hero title ="Become a React Dev test" subtitle="Test this by cr7ston"/>
+      <Hero title ="Cr7ston and React" subtitle="Test this by cr7ston"/>
 
       {/* <!-- Developers and Employers --> */}
       <Developers />
