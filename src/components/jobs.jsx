@@ -1,9 +1,12 @@
 import Joblisting from './jobslisting.jsx';
-import Card from './Card.jsx';
+
 import JobsData from '../jobs.json';
 
 
 const Jobs = () => {
+
+  const recentJobs = JobsData.slice(0,3)
+
   return (
     <div>
       {/* <!-- Browse Jobs --> */}
@@ -15,7 +18,9 @@ const Jobs = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Job Listing  */}
 
-              {JobsData.map(job =>(
+              {/* LIST THE JOBS IN AN ARRAY */}
+
+              {recentJobs.map(job =>(
                 <Joblisting key = {job.id} job={job} />
                 
               ))}
@@ -25,16 +30,13 @@ const Jobs = () => {
         </div>
       </section>
 
-      <section className="m-auto max-w-lg my-10 px-6">
-        <a
-          href="jobs.html"
-          className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        >
-          View All Jobs
-        </a>
-      </section>
+
     </div>
   );
 };
 
 export default Jobs;
+
+
+
+
