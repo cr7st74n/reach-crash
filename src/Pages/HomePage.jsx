@@ -10,7 +10,7 @@ const HomePage = () => {
       <>
         <Hero title= "Cr7ston Programmer" subtitle= "Este es mi primer demo como React Programmer" />
 
-            {/* <!-- Developers and Employers --> */}
+        {/* <!-- Developers and Employers --> */}
         <Developers />
 
         {/* <!-- Jobs Section --> */}
