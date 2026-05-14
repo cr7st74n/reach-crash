@@ -15,7 +15,7 @@ const HomePage = () => {
 
         {/* <!-- Jobs Section --> */}
 
-        <Jobs />  
+        <Jobs isHome= {true} />  
 
         <ViewAllJobs />
       </>
